@@ -1,166 +1,160 @@
 Document Management System (DMS)
 
-A simple command-line application built with Node.js and MongoDB to manage documents.
-It supports CRUD operations and querying through an interactive CLI interface.
+A simple Document Management System built with MongoDB that supports both:
 
-⚙️ 1. Installation & Setup
-Prerequisites
+🖥️ CLI (Command Line Interface) version → Node.js + Inquirer
 
-Install Node.js
- (v18+ recommended)
+🌐 Web version → Python Flask + Jinja templates
 
-Install MongoDB Community Server
- or use MongoDB Atlas (cloud)
+It allows users to perform CRUD operations (Create, Read, Update, Delete) and query documents by ID.
 
-Clone or Create Project Folder
-cd C:\Users\<your-username>\documents\mongo
-mkdir dms_js
-cd dms_js
+✨ Features
 
-Initialize Node.js Project
-npm init -y
-npm install mongodb inquirer
+Create → Add new documents with unique IDs.
 
-Project Structure
-dms_js/
+Read → View all stored documents.
+
+Update → Edit existing documents (title or content).
+
+Delete → Remove documents by ID.
+
+Query → Search documents by ID.
+
+Validation → Prevents duplicate IDs and empty inputs.
+
+Error Handling → Graceful error messages for invalid operations.
+
+Two interfaces:
+
+CLI (Node.js)
+
+Web app (Flask)
+
+🛠️ Tech Stack
+
+Database: MongoDB
+
+CLI: Node.js, Inquirer.js, MongoDB Node.js Driver
+
+Web App: Python, Flask, PyMongo, Jinja2
+
+📂 Project Structure
+mongo/
+├── dms_js/            # Node.js CLI version
+│   ├── dms.js         # Main CLI app
+│   ├── crud.js        # CRUD logic (optional separation)
+│   ├── package.json   # Dependencies
+│   └── node_modules/
 │
-├── node_modules/           # dependencies
-├── package.json
-├── package-lock.json
-├── crud.js                 # core CRUD operations
-└── dms.js                  # interactive CLI
+└── dms_flask/         # Flask web app version
+    ├── app.py         # Flask app entry
+    ├── requirements.txt
+    └── templates/     # HTML templates
+        ├── base.html
+        ├── index.html
+        ├── create.html
+        └── update.html
 
-🗄️ 2. Database Setup
+⚡ Setup Instructions
+1. Install MongoDB
 
-Start MongoDB locally:
+Download MongoDB
+ or use MongoDB Atlas
+.
+
+Start MongoDB service:
 
 mongod
 
+2. Run the CLI Version (Node.js)
 
-(or ensure MongoDB service is running)
+Navigate to project folder:
 
-Open Mongo Shell:
-
-mongosh
+cd dms_js
 
 
-Create database & collection:
+Install dependencies:
 
-use document_management_system
-db.createCollection("documents")
+npm install inquirer mongodb
 
-🖥️ 3. Running the Application
 
 Run the CLI:
 
 node dms.js
 
 
-You’ll see a menu:
+Follow the menu to Create, Read, Update, Delete, or Query documents.
 
---- Document Management System ---
+3. Run the Web Version (Flask)
+
+Navigate to project folder:
+
+cd dms_flask
+
+
+Install dependencies:
+
+pip install -r requirements.txt
+
+
+(or manually: pip install flask pymongo)
+
+Run Flask app:
+
+python app.py
+
+
+Open in browser:
+
+http://127.0.0.1:5000/
+
+🚀 Usage Examples
+CLI
 ? Select an action:
-  ▸ Create Document
+  ❯ Create Document
     Read Documents
     Update Document
     Delete Document
     Query Documents
     Exit
 
-✏️ 4. CRUD Operations
-➕ Create
 
-Choose Create Document
+Create → prompts for ID, title, content.
 
-Enter:
+Query → enter an ID, shows matching document.
 
-Unique ID (_id)
+Web
 
-Title
+Home page → lists all documents.
 
-Content
+Create → form to add new documents.
 
-Example:
+Update/Delete → actions available per document.
 
-Enter unique document ID: 1
-Enter document title: My First Doc
-Enter document content: Hello MongoDB!
-📄 Document created successfully!
+Search → enter ID in search bar.
 
-📖 Read
+📑 Tasks Completed
 
-Choose Read Documents
+Task 1: Database setup
 
-Displays all documents:
+Task 2: User Interface (CLI with Inquirer.js)
 
-📚 Documents:
-ID: 1 | Title: My First Doc | Content: Hello MongoDB!
+Task 3: CRUD operations (MongoDB + Node.js + Flask)
 
-✏️ Update
+Task 4: Error handling + validation
 
-Choose Update Document
+Task 5: Documentation + presentation
 
-Provide:
+🧩 Future Improvements
 
-Document ID
+Add authentication (users & roles).
 
-Field (title/content)
+File upload support.
 
-New value
+Pagination for large document sets.
 
-Example:
+API endpoints (RESTful) for integration.
 
-Enter document ID to update: 1
-Select field to update: title
-Enter new value: Updated Title
-✅ Document updated successfully!
+👩‍💻 Author
 
-🗑️ Delete
-
-Choose Delete Document
-
-Provide:
-
-Document ID
-
-Example:
-
-Enter document ID to delete: 1
-🗑️ Document deleted successfully!
-
-🔍 Query
-
-Choose Query Documents
-
-Provide:
-
-Field (title/content)
-
-Search term
-
-Example:
-
-Search by field: title
-Enter search term: Updated
-🔍 Search Results:
-ID: 1 | Title: Updated Title | Content: Hello MongoDB!
-
-🛡️ 5. Error Handling & Validation
-
-Prevents creating documents with missing fields
-
-Blocks duplicate _id values
-
-Requires valid IDs for update/delete
-
-Displays friendly messages if no documents are found or queries return empty results
-
-🌟 6. Extra Features
-
-Interactive CLI menu using Inquirer.js
-
-Uses MongoDB driver for direct DB operations
-
-Supports case-insensitive regex search in queries
-
-Clean error handling with user-friendly feedback
+Developed by Priscillah ✨
