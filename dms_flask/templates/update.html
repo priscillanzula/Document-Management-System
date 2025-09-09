@@ -1,0 +1,20 @@
+{% extends "base.html" %}
+{% block content %}
+<h2>✏️ Update Document</h2>
+<form method="POST">
+    <div class="mb-3">
+        <label>ID</label>
+        <input type="text" value="{{ doc['_id'] }}" disabled class="form-control">
+    </div>
+    <div class="mb-3">
+        <label>Title</label>
+        <input type="text" name="title" value="{{ doc['title'] }}" class="form-control">
+    </div>
+    <div class="mb-3">
+        <label>Content</label>
+        <textarea name="content" class="form-control">{{ doc['content'] }}</textarea>
+    </div>
+    <button class="btn btn-primary">Update</button>
+    <a href="{{ url_for('index') }}" class="btn btn-secondary">Cancel</a>
+</form>
+{% endblock %}

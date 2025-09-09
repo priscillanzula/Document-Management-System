@@ -1,0 +1,20 @@
+{% extends "base.html" %}
+{% block content %}
+<h2>➕ Create Document</h2>
+<form method="POST">
+    <div class="mb-3">
+        <label>ID</label>
+        <input type="text" name="id" class="form-control">
+    </div>
+    <div class="mb-3">
+        <label>Title</label>
+        <input type="text" name="title" class="form-control">
+    </div>
+    <div class="mb-3">
+        <label>Content</label>
+        <textarea name="content" class="form-control"></textarea>
+    </div>
+    <button class="btn btn-success">Create</button>
+    <a href="{{ url_for('index') }}" class="btn btn-secondary">Cancel</a>
+</form>
+{% endblock %}
