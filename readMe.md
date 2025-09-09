@@ -39,7 +39,7 @@ Error Handling → Graceful error messages for invalid operations.
    - Web App: Python, Flask, PyMongo, Jinja2
 
 #### 📂 Project Structure
-'''
+```
 mongo/
 ├── dms_js/            # Node.js CLI version
 │   ├── dms.js         # Main CLI app
@@ -55,7 +55,7 @@ mongo/
         ├── index.html
         ├── create.html
         └── update.html
-'''
+```
 
 #### ⚡ Setup Instructions
 
@@ -66,10 +66,8 @@ mongo/
 
 Navigate to project folder:
 
- '''
- cd dms_js
- 
- '''
+```cd dms_js
+```
 
 Install dependencies:
 
