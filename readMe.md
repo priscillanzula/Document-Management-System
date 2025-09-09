@@ -2,43 +2,44 @@ Document Management System (DMS)
 
 A simple Document Management System built with MongoDB that supports both:
 
-🖥️ CLI (Command Line Interface) version → Node.js + Inquirer
+ 🖥️ CLI (Command Line Interface) version → Node.js + Inquirer
 
-🌐 Web version → Python Flask + Jinja templates
+ 🌐 Web version → Python Flask + Jinja templates
 
 It allows users to perform CRUD operations (Create, Read, Update, Delete) and query documents by ID.
 
-✨ Features
+#### ✨ Features
 
-Create → Add new documents with unique IDs.
+ - Create → Add new documents with unique IDs.
 
-Read → View all stored documents.
+ - Read → View all stored documents.
 
-Update → Edit existing documents (title or content).
+ - Update → Edit existing documents (title or content).
 
-Delete → Remove documents by ID.
+ - Delete → Remove documents by ID.
 
-Query → Search documents by ID.
+ - Query → Search documents by ID.
 
 Validation → Prevents duplicate IDs and empty inputs.
 
 Error Handling → Graceful error messages for invalid operations.
 
-Two interfaces:
+#### Two interfaces:
 
-CLI (Node.js)
+  1. CLI (Node.js)
 
-Web app (Flask)
+  2. Web app (Flask)
 
-🛠️ Tech Stack
+#### 🛠️ Tech Stack
 
-Database: MongoDB
+   - Database: MongoDB
 
-CLI: Node.js, Inquirer.js, MongoDB Node.js Driver
+   - CLI: Node.js, Inquirer.js, MongoDB Node.js Driver
 
-Web App: Python, Flask, PyMongo, Jinja2
+   - Web App: Python, Flask, PyMongo, Jinja2
 
-📂 Project Structure
+#### 📂 Project Structure
+'''
 mongo/
 ├── dms_js/            # Node.js CLI version
 │   ├── dms.js         # Main CLI app
@@ -54,34 +55,34 @@ mongo/
         ├── index.html
         ├── create.html
         └── update.html
+'''
 
-⚡ Setup Instructions
-1. Install MongoDB
+#### ⚡ Setup Instructions
 
-Download MongoDB
- or use MongoDB Atlas
-.
-
-Start MongoDB service:
-
-mongod
+1. Install MongoDB and Download MongoDB
+ 
 
 2. Run the CLI Version (Node.js)
 
 Navigate to project folder:
 
-cd dms_js
-
+ '''
+ cd dms_js
+ 
+ '''
 
 Install dependencies:
 
+ ''' 
 npm install inquirer mongodb
 
-
+ '''
 Run the CLI:
 
+ '''
 node dms.js
 
+ '''
 
 Follow the menu to Create, Read, Update, Delete, or Query documents.
 
@@ -89,26 +90,30 @@ Follow the menu to Create, Read, Update, Delete, or Query documents.
 
 Navigate to project folder:
 
+'''
 cd dms_flask
 
+'''
 
 Install dependencies:
 
+ '''
 pip install -r requirements.txt
 
-
-(or manually: pip install flask pymongo)
+'''
 
 Run Flask app:
 
+''' 
 python app.py
 
+'''
 
-Open in browser:
+##### Open in browser:
 
 http://127.0.0.1:5000/
 
-🚀 Usage Examples
+#### 🚀 Usage Examples
 CLI
 ? Select an action:
   ❯ Create Document
@@ -123,7 +128,7 @@ Create → prompts for ID, title, content.
 
 Query → enter an ID, shows matching document.
 
-Web
+### Web
 
 Home page → lists all documents.
 
@@ -133,28 +138,28 @@ Update/Delete → actions available per document.
 
 Search → enter ID in search bar.
 
-📑 Tasks Completed
+#### 📑 Tasks Completed
 
-Task 1: Database setup
+  Task 1: Database setup
 
-Task 2: User Interface (CLI with Inquirer.js)
+  Task 2: User Interface (CLI with Inquirer.js)
 
-Task 3: CRUD operations (MongoDB + Node.js + Flask)
+  Task 3: CRUD operations (MongoDB + Node.js + Flask)
 
-Task 4: Error handling + validation
+  Task 4: Error handling + validation
 
-Task 5: Documentation + presentation
+  Task 5: Documentation + presentation
 
-🧩 Future Improvements
+#### 🧩 Future Improvements
 
-Add authentication (users & roles).
+ Add authentication (users & roles).
 
-File upload support.
+ File upload support.
 
-Pagination for large document sets.
+ Pagination for large document sets.
 
-API endpoints (RESTful) for integration.
+ API endpoints (RESTful) for integration.
 
-👩‍💻 Author
+### 👩‍💻 Author
 
-Developed by Priscillah ✨
+Developed by Priscilla✨
