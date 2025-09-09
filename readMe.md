@@ -66,21 +66,23 @@ mongo/
 
 Navigate to project folder:
 
-```cd dms_js
+```
+ cd dms_js
+
 ```
 
 Install dependencies:
 
- ''' 
+```
 npm install inquirer mongodb
 
- '''
+```
 Run the CLI:
 
- '''
+ ```
 node dms.js
 
- '''
+```
 
 Follow the menu to Create, Read, Update, Delete, or Query documents.
 
@@ -88,24 +90,24 @@ Follow the menu to Create, Read, Update, Delete, or Query documents.
 
 Navigate to project folder:
 
-'''
+```
 cd dms_flask
 
-'''
+```
 
 Install dependencies:
 
- '''
+```
 pip install -r requirements.txt
 
-'''
+```
 
 Run Flask app:
 
-''' 
+```
 python app.py
 
-'''
+```
 
 ##### Open in browser:
 
