@@ -48,16 +48,16 @@ Error Handling → Graceful error messages for invalid operations.
 #### 📂 Project Structure
 ```
 mongo/
-├── dms_js/            # Node.js CLI version
-│   ├── dms.js         # Main CLI app
-│   ├── crud.js        # CRUD logic (optional separation)
-│   ├── package.json   # Dependencies
+├── dms_js/             
+│   ├── dms.js         
+│   ├── crud.js        
+│   ├── package.json   
 │   └── node_modules/
 │
-└── dms_flask/         # Flask web app version
-    ├── app.py         # Flask app entry
+└── dms_flask/         
+    ├── app.py         
     ├── requirements.txt
-    └── templates/     # HTML templates
+    └── templates/     
         ├── base.html
         ├── index.html
         ├── create.html
