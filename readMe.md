@@ -1,12 +1,12 @@
-Document Management System (DMS)
+#### Document Management System (DMS)
 
 A simple Document Management System built with MongoDB that supports both:
 
- 🖥️ CLI (Command Line Interface) version → Node.js + Inquirer
+  -  CLI (Command Line Interface) version → Node.js + Inquirer
 
- 🌐 Web version → Python Flask + Jinja templates
+  - Web version → Python Flask + Jinja templates
 
-It allows users to perform CRUD operations (Create, Read, Update, Delete) and query documents by ID.
+It allows users to perform CRUD operations such as Create, Read, Update, Delete and query documents by ID.
 
 
 
@@ -17,19 +17,19 @@ https://github.com/user-attachments/assets/45049417-9027-4c0e-8a8f-9212810abe20
 
 #### ✨ Features
 
- - Create → Add new documents with unique IDs.
+ - Create - Add new documents with unique IDs.
 
- - Read → View all stored documents.
+ - Read -  View all stored documents.
 
- - Update → Edit existing documents (title or content).
+ - Update - Edit existing documents (title or content).
 
- - Delete → Remove documents by ID.
+ - Delete - Remove documents by ID.
 
- - Query → Search documents by ID.
+ - Query Search documents by ID.
 
-Validation → Prevents duplicate IDs and empty inputs.
+ Validation - Prevents duplicate IDs and empty inputs.
 
-Error Handling → Graceful error messages for invalid operations.
+ Error Handling -   error messages for invalid operations. 
 
 #### Two interfaces:
 
@@ -45,7 +45,7 @@ Error Handling → Graceful error messages for invalid operations.
 
    - Web App: Python, Flask, PyMongo, Jinja2
 
-#### 📂 Project Structure
+#### Project Structure
 ```
 mongo/
 ├── dms_js/             
@@ -120,7 +120,7 @@ python app.py
 
 http://127.0.0.1:5000/
 
-#### 🚀 Usage Examples
+####  Usage Examples
 CLI
 ? Select an action:
   ❯ Create Document
@@ -131,9 +131,9 @@ CLI
     Exit
 
 
-Create → prompts for ID, title, content.
+Create - prompts for ID, title, content.
 
-Query → enter an ID, shows matching document.
+Query - enter an ID, shows matching document.
 
 ### Web
 
