@@ -2,9 +2,9 @@
 
 A simple Document Management System built with MongoDB that supports both:
 
-  -  CLI (Command Line Interface) version → Node.js + Inquirer
+  -  CLI (Command Line Interface) version  and  Node.js 
 
-  - Web version → Python Flask + Jinja templates
+  - Web version  using Python Flask s
 
 It allows users to perform CRUD operations such as Create, Read, Update, Delete and query documents by ID.
 
@@ -37,13 +37,7 @@ https://github.com/user-attachments/assets/45049417-9027-4c0e-8a8f-9212810abe20
 
   2. Web app (Flask)
 
-#### 🛠️ Tech Stack
 
-   - Database: MongoDB
-
-   - CLI: Node.js, Inquirer.js, MongoDB Node.js Driver
-
-   - Web App: Python, Flask, PyMongo, Jinja2
 
 #### Project Structure
 ```
@@ -135,27 +129,7 @@ Create - prompts for ID, title, content.
 
 Query - enter an ID, shows matching document.
 
-### Web
 
-Home page → lists all documents.
-
-Create → form to add new documents.
-
-Update/Delete → actions available per document.
-
-Search → enter ID in search bar.
-
-#### 📑 Tasks Completed
-
-  Task 1: Database setup
-
-  Task 2: User Interface (CLI with Inquirer.js)
-
-  Task 3: CRUD operations (MongoDB + Node.js + Flask)
-
-  Task 4: Error handling + validation
-
-  Task 5: Documentation + presentation
 
 #### 🧩 Future Improvements
 
@@ -167,6 +141,6 @@ Search → enter ID in search bar.
 
  API endpoints (RESTful) for integration.
 
-### 👩‍💻 Author
+### Priscilla Nzula
 
 Developed by Priscilla✨
