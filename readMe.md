@@ -114,22 +114,6 @@ python app.py
 
 http://127.0.0.1:5000/
 
-####  Usage Examples
-CLI
-? Select an action:
-  ❯ Create Document
-    Read Documents
-    Update Document
-    Delete Document
-    Query Documents
-    Exit
-
-
-Create - prompts for ID, title, content.
-
-Query - enter an ID, shows matching document.
-
-
 
 #### 🧩 Future Improvements
 
